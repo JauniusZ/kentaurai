@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.layout {
+    width: 100%;
+}
+
+.bin {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid vz;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.bin.menu {
+    background-color: skyblue;
+    height: 100px;
+}
+
+nav {
+    border-right: 3px solid whitesmoke;
+    border-left: 3px solid white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    list-style: none;
+    padding: 10;
+    margin: 0;
+    height: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: white;
+    transition: all 0.5s;
+}
+
