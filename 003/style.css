@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+i {
+  color: orange;
+}
+
+span {
+  color: skyblue;
+}
+
+.kazinkas {
+  color: crimson;
+  font-size: 50px;
+  line-height: 2.5;
+  letter-spacing: 4px;
+  margin: 0;
+  border: 2px solid cadetblue;
+  display: inline;
+  padding: 20px;
+  width: 50%;
+}
+
+.kuku {
+    color:orange;
+}

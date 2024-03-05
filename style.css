@@ -1,0 +1,25 @@
+body {
+  color: rgb(3, 2, 20);
+  background-color: rgb(231, 235, 235);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+img {
+  width: auto;
+  height: 150px;
+}
+
+.image1,
+.image2 {
+  width: auto;
+  height: 150px;
+}
+
+.photos {
+  display: flex;
+  gap: 20px;
+}
