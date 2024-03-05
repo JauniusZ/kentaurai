@@ -1,0 +1,46 @@
+body {
+  color: rgb(3, 2, 20);
+  background-color: rgb(231, 235, 235);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+img {
+  width: auto;
+  height: 150px;
+}
+
+.image1,
+.image2 {
+  width: auto;
+  height: 150px;
+}
+
+.image3,
+.image4 {
+  width: auto;
+  display: flex;
+}
+.photos1 {
+  display: flex;
+  gap: 20px;
+}
+
+.photos2 {
+  display: flex;
+  margin-top: 10px;
+}
+
+.text {
+  font-size: 16px;
+  text-align: justify;
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+
+
+  
