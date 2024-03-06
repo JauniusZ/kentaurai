@@ -1,0 +1,156 @@
+* {
+  letter-spacing: 3px;
+}
+
+i {
+  color: steelblue;
+}
+
+.big {
+  font-size: 2em;
+  color: rgb(0, 255, 13);
+}
+
+.big .small {
+  font-size: 0.5em;
+  color: crimson;
+}
+
+.big.small {
+  font-size: 3.5em;
+  color: coral;
+}
+
+#big {
+  font-size: 2em;
+  color: rgb(245, 47, 255);
+}
+
+#big .small {
+  font-size: 0.5em;
+  color: orange;
+}
+
+button {
+  font-size: 1.5em;
+  color: rgb(247, 0, 255);
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+button[type="button"] {
+  background-color: lightgreen;
+  border: 1px solid darkred;
+}
+
+button[type="submit"] {
+  background-color: chocolate;
+  border: 1px solid darkred;
+}
+
+button[type="reset"] {
+  background-color: pink;
+  border: 1px solid darkred;
+}
+
+span-1,
+span-2 {
+  font-size: 2em;
+  color: azure;
+  background-color: aqua;
+}
+
+.parent > p {
+  font-size: 1em;
+  color: rgb(213, 205, 255);
+}
+
+h2 + h3 {
+  color: orange;
+}
+
+h5 ~ span {
+  font-size: 1.5em;
+  color: rgb(255, 0, 0);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  align-items: center;
+}
+
+ul li {
+  border-bottom: 1px solid darkmagenta;
+}
+
+ul li:nth-child(even) {
+  color: orangered;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.after {
+  font-size: 30px;
+}
+
+label {
+  user-select: none;
+  cursor: pointer;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"]:checked + div {
+  color: darkgreen;
+}
+
+.bin {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.sq {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  animation-name: anikuku;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anikuku {
+  0% {
+    background-color: darkgreen;
+    transform: rotate(0deg);
+  }
+  25% {
+    background-color: blue;
+    transform: rotate(30deg);
+    
+  }
+  50% {
+    background-color: red;
+    transform: rotate(60deg);
+  }
+  75% {
+    background-color: greenyellow;
+    transform: rotate(90deg);
+  }
+  100% {
+    background-color: pink;
+    transform: rotate(120deg);
+  }
+}
