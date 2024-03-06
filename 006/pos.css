@@ -47,12 +47,7 @@
   height: 240px;
 }
 
-img {
-  width: 300px;
-  height: auto;
-  position: absolute;
-  transition: all 0.5s;
-}
+
 
 .img1 {
   opacity: 0;
@@ -70,43 +65,7 @@ img {
   opacity: 0;
 }
 
-.img-container2 {
-  border: 1px solid black;
-  padding: 20px;
-  width: 300px;
-  position: relative;
-  margin: 20px;
-  height: 240px;
-}
 
-.img-container2 img {
-  position: absolute;
-  display: inline-block;
-}
-
-.img-container2 .img12 {
-  top: 20px;
-  left: 20px;
-  transition: all 0.5s;
-  opacity: 1;
-}
-
-.img-container2 .img22 {
-  top: 20px;
-  position: 520px;
-  transition: all 0.5s;
-  opacity: 0;
-}
-
-.img-container2:hover .img12 {
-    left: -520px;
-    opacity: 0;
-}
-
-.img-container2:hover .img22 {
-    left: 20px;
-    opacity: 1;
-}
 
 body {
   margin: 0;
