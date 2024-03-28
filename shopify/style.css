@@ -1,0 +1,193 @@
+/* Import the font */
+@import url("https://fonts.googleapis.com/css2?family=Anonymous%20Pro:wght@400;700&display=swap");
+
+:root {
+  --font-body-family: "Anonymous Pro", sans-serif;
+  --font-body-style: normal;
+  --font-body-weight: 400;
+  --font-heading-family: "Avenir Next", sans-serif;
+  --font-heading-style: normal;
+  --font-heading-weight: 500;
+  --font-body-scale: 1.05;
+  --font-heading-scale: 1.1904761904761905;
+  --color-base-text: 2, 9, 18;
+  --color-shadow: 2, 9, 18;
+  --color-base-background-1: 252, 252, 252;
+  --color-base-background-2: 228, 246, 255;
+  --color-base-solid-button-labels: 252, 252, 252;
+  --color-base-outline-button-labels: 2, 9, 18;
+  --color-base-accent-1: 2, 9, 18;
+  --color-base-accent-2: 2, 9, 18;
+  --payment-terms-background-color: #fcfcfc;
+  --gradient-base-background-1: #fcfcfc;
+  --gradient-base-background-2: #e4f6ff;
+  --gradient-base-accent-1: #020912;
+  --gradient-base-accent-2: #020912;
+  --media-padding: px;
+  --media-border-opacity: 1;
+  --media-border-width: 2px;
+  --media-radius: 0px;
+  --media-shadow-opacity: 0;
+  --media-shadow-horizontal-offset: 0px;
+  --media-shadow-vertical-offset: 0px;
+  --media-shadow-blur-radius: 0px;
+  --page-width: 140rem;
+  --page-width-margin: 0rem;
+  --card-image-padding: 0rem;
+  --card-corner-radius: 0rem;
+  --card-text-alignment: center;
+  --card-border-width: 0rem;
+  --card-border-opacity: 0;
+  --card-shadow-opacity: 0.1;
+  --card-shadow-horizontal-offset: 0rem;
+  --card-shadow-vertical-offset: 0rem;
+  --card-shadow-blur-radius: 0rem;
+  --badge-corner-radius: 4rem;
+  --popup-border-width: 2px;
+  --popup-border-opacity: 1;
+  --popup-corner-radius: 0px;
+  --popup-shadow-opacity: 0;
+  --popup-shadow-horizontal-offset: 0px;
+  --popup-shadow-vertical-offset: 0px;
+  --popup-shadow-blur-radius: 0px;
+  --drawer-border-width: 2px;
+  --drawer-border-opacity: 1;
+  --drawer-shadow-opacity: 0;
+  --drawer-shadow-horizontal-offset: 0px;
+  --drawer-shadow-vertical-offset: 0px;
+  --drawer-shadow-blur-radius: 0px;
+  --spacing-sections-desktop: 20px;
+  --spacing-sections-mobile: 20px;
+  --grid-desktop-vertical-spacing: 24px;
+  --grid-desktop-horizontal-spacing: 24px;
+  --grid-mobile-vertical-spacing: 12px;
+  --grid-mobile-horizontal-spacing: 12px;
+  --text-boxes-border-opacity: 1;
+  --text-boxes-border-width: 2px;
+  --text-boxes-radius: 0px;
+  --text-boxes-shadow-opacity: 0;
+  --text-boxes-shadow-horizontal-offset: 0px;
+  --text-boxes-shadow-vertical-offset: 0px;
+  --text-boxes-shadow-blur-radius: 0px;
+  --buttons-radius: 0px;
+  --buttons-radius-outset: 0px;
+  --buttons-border-width: 1px;
+  --buttons-border-opacity: 1;
+  --buttons-shadow-opacity: 0;
+  --buttons-shadow-horizontal-offset: 0px;
+  --buttons-shadow-vertical-offset: 0px;
+  --buttons-shadow-blur-radius: 0px;
+  --buttons-border-offset: 0px;
+  --inputs-radius: 0px;
+  --inputs-border-width: 1px;
+  --inputs-border-opacity: 0.55;
+  --inputs-shadow-opacity: 0;
+  --inputs-shadow-horizontal-offset: 0px;
+  --inputs-margin-offset: 0px;
+  --inputs-shadow-vertical-offset: 0px;
+  --inputs-shadow-blur-radius: 0px;
+  --inputs-radius-outset: 0px;
+  --variant-pills-radius: 40px;
+  --variant-pills-border-width: 1px;
+  --variant-pills-border-opacity: 0.55;
+  --variant-pills-shadow-opacity: 0;
+  --variant-pills-shadow-horizontal-offset: 0px;
+  --variant-pills-shadow-vertical-offset: 0px;
+  --variant-pills-shadow-blur-radius: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--);
+}
+
+.container {
+  border: solid 1px black;
+  height: 600px;
+}
+
+.header {
+  border: solid 1px black;
+  height: 40px;
+  text-align: center;
+  background-color: black;
+}
+
+.header p {
+  color: white;
+}
+
+.topnav {
+  border: solid 1px black;
+  height: 110px;
+  position: relative;
+  font-family: "Anonymous Pro", sans-serif;
+}
+
+.image1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  position: absolute;
+  top: 16px;
+  left: 60px;
+  list-style-type: none;
+}
+
+li {
+  font-size: 15px;
+}
+
+.search-icon {
+  height: 15px;
+  position: absolute;
+  top: 35px;
+  right: 40px;
+}
+
+.cart {
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.main {
+  height: 530px;
+  display: flex;
+  border: solid 2px red;
+}
+
+.beverages {
+  width: 50%;
+  border: solid 1px green;
+}
+
+.lemonade {
+  width: 50%;
+  text-align: center;
+  border: solid 1px blue;
+}
+
+.drinks-image {
+  transition: transform 0.5s ease; /* Add a smooth transition */
+  width: 100%;
+}
+
+.drinks-image:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+h2 {
+  font-family: var(--);
+}
