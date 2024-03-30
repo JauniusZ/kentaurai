@@ -1,0 +1,303 @@
+:root {
+    --img: 300px;
+    --img2: 500px;
+}
+
+body {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+.layout {
+    width: 100%;
+}
+
+.bin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.bin.menu {
+    background-color: lightblue;
+    height: 100px;
+}
+
+nav {
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    color: darkblue;
+}
+
+
+svg {
+    width: 40px;
+    height: 40px;
+    fill: olivedrab;
+    transition: all 0.3s;
+}
+
+svg:hover {
+    fill: darkblue;
+}
+
+.hero {
+    width: 100%;
+    height: 500px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: var(--img);
+    height: auto;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+@media only screen and (min-width: 700px) {
+    img {
+        width: var(--img2);
+    }
+}
+
+.img-container2 {
+    border: 1px solid black;
+    padding: 20px;
+    width: var(--img);
+    position: relative;
+    margin: 20px;
+    height: 170px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 700px) {
+    .img-container2 {
+        width: var(--img2);
+        height: 290px;
+    }
+}
+
+.img-container2 img {
+    position: absolute;
+    display: inline-block;
+}
+
+.img-container2 .img12  {
+    top: 20px;
+    left: 20px;
+    transition: all 0.5s;
+}
+
+.img-container2 .img22 {
+    top: 20px;
+    left: calc(var(--img) + 40px);
+    transition: all 0.5s;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .img-container2 .img22 {
+        left: calc(var(--img2) + 40px);
+    }
+}
+
+.img-container2:hover .img12 {
+    left: calc(-1 * (var(--img) + 20px));
+}
+
+@media only screen and (min-width: 700px) {
+    .img-container2:hover .img12 {
+        left: calc(-1 * (var(--img2) + 20px));
+    }
+}
+
+.img-container2:hover .img22 {
+    left: 20px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .text {
+    width: 100%;
+    position: relative;
+}
+
+.about .text h2::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    border-radius: 50%;
+    position: relative;
+    bottom: 10px;
+}
+
+.about .text h2::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    border-radius: 50%;
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    .about .text {
+        width: 100%;
+    }
+} */
+
+@media only screen and (min-width: 600px) {
+    .about .text {
+        width: 50%;
+    }
+    .about .text h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    .about .text {
+        width: 25%;
+    }
+    .about .text h2 {
+        font-size: 40px;
+    }
+}
+
+.desktop-menu {
+    display: none;
+}
+
+
+.burger-holder {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 100px;
+}
+
+
+
+
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger div {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+[type="checkbox"] {
+    display: none;
+}
+
+.left-menu {
+    position: absolute;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    background-color: lightsalmon;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.3s;
+    margin: 0;
+    z-index: 100;
+    height: 100vh;
+    list-style: none;
+    padding: 100px 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.left-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+[type="checkbox"]:checked + .left-menu {
+    left: 0;
+}
+
+li label {
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+li.m {
+    transform: translate(120px, -100px);
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    .desktop-menu {
+        display: flex;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}
+
+
