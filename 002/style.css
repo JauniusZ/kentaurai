@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+div {
+    font-size: 0;
+}
+
+.kazinkas {
+    color:rgb(0, 8, 255);
+    font-size: 50px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    border: 2px solid salmon;
+    padding: 20px;
+    margin: 0;
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    height: 200px;
+    vertical-align: middle;
+}
+
+i.kuku {
+    color: rgb(255, 0, 136);
+}
+
+span {
+    color: red;
+}
+
+i {
+    color: rgb(0, 255, 76);
+    font-size: 100px;
+}
