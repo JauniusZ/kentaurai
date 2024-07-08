@@ -1,0 +1,9 @@
+.photo1,
+.photo2,
+.photo3,
+.photo4,
+.photo5 {
+    display: flex;
+    height: 250px;
+    padding: 5px;
+}
